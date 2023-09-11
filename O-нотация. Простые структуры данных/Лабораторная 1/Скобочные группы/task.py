@@ -28,10 +28,10 @@ def check_brackets(brackets_row: str) -> bool:
     """
     q = Stack()
 
-    for i in range(len(brackets_row)):
-        if brackets_row[i] == "(":
+    for i in (brackets_row):
+        if i == "(":
             res = q.push()
-        if brackets_row[i] == ")":
+        if i == ")":
             res = q.pop_()
     return res
     # TODO реализовать проверку скобочной группы
@@ -40,4 +40,4 @@ def check_brackets(brackets_row: str) -> bool:
 if __name__ == '__main__':
     print(check_brackets("()()"))  # True
     print(check_brackets(")("))  # False
-#    print(check_brackets("()())("))  # False
+    print(check_brackets("()())("))  # False
