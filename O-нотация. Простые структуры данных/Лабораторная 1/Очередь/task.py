@@ -32,6 +32,7 @@ class Queue:
         if len(self.que) == 0:
             raise IndexError("Ошибка, если очередь пуста")
         return self.que.pop()
+
         # TODO реализовать метод dequeue
 
     def peek(self, ind: int = 0) -> Any:
