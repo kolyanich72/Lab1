@@ -32,11 +32,10 @@ def iter_f(stairway):
 def tree_creator(stairway):
     stairway_graph = nx.Graph()
     ebunch = []
+
     for i in range(1, len(stairway) + 1):
         if i == 1:
-            ebunch.append((i - 1, i, stairway[i - 1]))
-
-
+            ebunch.append((i - 1, i, stairway[i - 1])
         else:
             ebunch.append((i - 1, i, stairway[i - 1]))
             ebunch.append((i - 2, i, stairway[i - 1]))
