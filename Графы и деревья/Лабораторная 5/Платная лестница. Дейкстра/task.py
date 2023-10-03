@@ -12,7 +12,6 @@ def stairway_path(graph: nx.DiGraph) -> Union[float, int]:
     """
      # c помощью функции из модуля networkx найти стоимость кратчайшего пути до последней лестницы
     pred, dist = nx.dijkstra_predecessor_and_distance(graph, 0)
-
     return dist[len(dist)-1]
 
 
@@ -47,11 +46,7 @@ def tree_creator(stairway):
 if __name__ == '__main__':
     stairway = (1, 3, 1, 5, 2, 7, 7, 8, 9, 4, 6, 3)  #(5, 11, 43, 2, 23, 43, 22, 12, 6, 8)
     stairway_graph = tree_creator(stairway)
-
-
  #   print(stairway_graph.edges)
-
 #    print(iter_f(stairway))
-
    #  записать взвешенный граф, а лучше написать функцию, которая формирует граф по стоимости ступеней
     print(stairway_path(stairway_graph))  # 72
