@@ -42,7 +42,7 @@ def tree_creator(stairway):
             ebunch.append((i - 1, i, stairway[i - 1]))
             ebunch.append((i - 2, i, stairway[i - 1]))
     stairway_graph.add_weighted_edges_from(ebunch)
-    print(ebunch)
+ #   print(ebunch)
     return  stairway_graph
 
 if __name__ == '__main__':
@@ -54,5 +54,5 @@ if __name__ == '__main__':
 
 #    print(iter_f(stairway))
 
-   #  #  записать взвешенный граф, а лучше написать функцию, которая формирует граф по стоимости ступеней
+   #  записать взвешенный граф, а лучше написать функцию, которая формирует граф по стоимости ступеней
     print(stairway_path(stairway_graph))  # 72
