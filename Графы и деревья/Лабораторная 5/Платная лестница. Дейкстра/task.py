@@ -43,6 +43,7 @@ def tree_creator(stairway):
  #   print(ebunch)
     return  stairway_graph
 
+
 if __name__ == '__main__':
     stairway = (1, 3, 1, 5, 2, 7, 7, 8, 9, 4, 6, 3)  #(5, 11, 43, 2, 23, 43, 22, 12, 6, 8)
     stairway_graph = tree_creator(stairway)
