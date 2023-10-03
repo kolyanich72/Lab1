@@ -29,6 +29,7 @@ def iter_f(stairway):
         coast.append(min(coast[i-1] + stairway[i], coast [i-2] + stairway[i]))
     return coast[-1]
 
+
 def tree_creator(stairway):
     stairway_graph = nx.Graph()
     ebunch = []
